@@ -190,7 +190,7 @@ static int __init psi_hook_init(void)
 	if (IS_ERR(tng_trigger))
 		return PTR_ERR(tng_trigger);
 
-	psi_trigger_replace(&tng_private, tng_trigger);
+	psi_trigger_destroy(tng_trigger);
 
 	tngpsi_tsk = kthread_run(tngpsi, NULL, "tngpsi");
 	WARN_ON(!tngpsi_tsk);
