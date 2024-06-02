@@ -1,0 +1,5 @@
+menu "Sony driver settings"
+
+source "drivers/sony/pn553/Kconfig"
+
+endmenu

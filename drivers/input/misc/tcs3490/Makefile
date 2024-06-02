@@ -1,1 +1,0 @@
-obj-$(CONFIG_INPUT_TCS3490)		+= tcs3490.o
